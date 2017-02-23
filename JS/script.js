@@ -1,20 +1,27 @@
-//javaScript
-//Zadanie 8.4
-//Pole trójkąta
+var a=prompt('Wpisz dowolną wartość dla parametru a'),
+	b=prompt('Wpisz dowolną wartośc dla parametru b'),
+	value=(a*a) + (2*a*b) - (b*b);
+	console.log(value);
 
-/*var a = 2,
-	h = 7,
-	triangleArea = a*h/2;
+	if (value>0) {
+		alert('Wynik jest dodatni');
+		document.getElementById('type-of-calculation').innerHTML=('Wynik jest dodatni');
+		console.log('Wynik jest dodatni');
+	}
+	else if (value<0) {
+		alert('Wynik jest ujemny');
+		document.getElementById('type-of-calculation').innerHTML=('Wynik jest ujemny');
+		console.log('Wynik jest ujemny');
+	}
+	else if (value===0) {
+		alert('Wynik ma wartość równą 0');
+		document.getElementById('type-of-calculation').innerHTML=('Wynik jest równy 0');
+		console.log('Wynik ma wartość równą 0');
+	}
+	else {
+		alert('Nie wpisałeś poprawnie liczb');
+		document.getElementById('type-of-calculation').innerHTML=('Nie wpisałeś poprawnie liczb !');
+	}
 
-	document.write('Pole trójkąta o podstawie a= '+a+' i wysokości h= '+h+' równa się '+triangleArea);
-	console.log('Pole trójkąta o podstawie a= '+a+' i wysokości h= '+h+' równa się '+triangleArea);*/
-
-
-var a = prompt('Wpisz długość podstawy trójkąta'),
-	h = prompt('Wpisz wysokość trójkąta'),
-	triangleArea = a*h/2;
-
-	alert('Pole trójkąta o podstawie a= '+a+' i wysokości h= '+h+' równa się '+triangleArea);
-
-	document.getElementById('area').innerHTML=('Pole trójkąta o podstawie a= '+a+' i wysokości h= '+h+' równa się '+triangleArea);
-	console.log('Pole trójkąta o podstawie a= '+a+' i wysokości h= '+h+' równa się '+triangleArea);
+	console.log('Gdy a= '+a+' , b= '+b+' wynik wynosi '+value);
+	document.getElementById('math-patern').innerHTML=('Gdy a= [ '+a+' ] , b= [ '+b+' ] wynik jest równy '+value);
