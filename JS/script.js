@@ -5,11 +5,12 @@ var allNames = femaleNames.concat(maleNames);
 var newName = prompt('Dodaj swoje imię');
 if (allNames.indexOf(newName) === -1) {
 	allNames[8] = newName;
+	document.getElementById('names').innerHTML = (allNames);
+	document.getElementById('new-name').innerHTML = ('Twoje imię '+ newName +' zostało dodane do tablicy.');
 } else {
 	alert('Takie imię jest już w bazie.');
+	document.getElementById('names').innerHTML = (allNames);
+	document.getElementById('new-name').innerHTML = ('Wpisałeś imię '+ newName +'. Takie imię już istnieje, dlatego nie zostało dodane do tablicy.');
 } 
-
-document.getElementById('names').innerHTML = (allNames);
-document.getElementById('new-name').innerHTML = (newName);
 
 console.log(allNames);
