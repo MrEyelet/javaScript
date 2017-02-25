@@ -1,16 +1,20 @@
-var femaleNames = ['Paulina', 'Asia', 'Ola', 'Jola'];
-var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
-var allNames = femaleNames.concat(maleNames);
+var text = 'Papuga kosi trawę, unosząc się nad ziemią 15 centymetrów, na czerwonej chmurze danych.';
+var newAnimal = "Zielona Kodilla";
+var btnLeft = document.getElementById('true');
+var btnRight = document.getElementById('false');
 
-var newName = prompt('Dodaj swoje imię');
-if (allNames.indexOf(newName) === -1) {
-	allNames[8] = newName;
-	document.getElementById('names').innerHTML = (allNames);
-	document.getElementById('new-name').innerHTML = ('Twoje imię '+ newName +' zostało dodane do tablicy.');
-} else {
-	alert('Takie imię jest już w bazie.');
-	document.getElementById('names').innerHTML = (allNames);
-	document.getElementById('new-name').innerHTML = ('Wpisałeś imię '+ newName +'. Takie imię już istnieje, dlatego nie zostało dodane do tablicy.');
-} 
+	newAnimal = newAnimal.toUpperCase();
+	newAnimal = text.replace(text.substr(0, 6), newAnimal);
+	newAnimal = newAnimal.substr(0, newAnimal.length/2);
 
-console.log(allNames);
+btnLeft.addEventListener('click', function(event) {
+	alert('Nieprawda ! '  + newAnimal);
+	document.getElementById('cut').innerHTML=('Tekst w oknie dialogowym został celowo ucięty');
+});
+btnRight.addEventListener('click', function(event) {
+	alert('Oczywiście, że fałsz bo przecież '  + newAnimal);
+	document.getElementById('cut').innerHTML=('Tekst w oknie dialogowym został celowo ucięty');
+});
+
+
+console.log(newAnimal);
