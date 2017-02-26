@@ -5,8 +5,24 @@ body {
 	margin: 0;
 	padding: 0;
 }
+ul {
+	margin: 0 0 50px 0;
+	padding: 0;
+	text-align: center;
+	font-size: 0;
+}
 
-.container {
+ul li {
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	width: 100px;
+	background: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+
+}
+.content {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -16,9 +32,6 @@ body {
 }
 
 button {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
 	width: 200px;
 	background: none;
 	border: 3px solid #fff;
