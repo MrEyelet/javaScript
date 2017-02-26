@@ -4,49 +4,31 @@
 body {
 	margin: 0;
 	padding: 0;
-
 }
 
-.first {
-	width: 500px;
-	margin: 0 auto;
-	position: relative;
-	text-align: center;
-}
-
-.first img {
+.container {
 	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	background: #F00;
+	text-align: center;
 	height: 100vh;
 }
 
-.second {
-	background: rgba(0, 0, 0, 0.6);
-	position: absolute;
+button {
+	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-	color: #fff;
-	font-size: 36px;
-	font-weight: bold;
-}
-
-button {
-	width: 100px;
-	margin-bottom: 15px;
+	width: 200px;
 	background: none;
 	border: 3px solid #fff;
+	font-size: 36px;
 	color: #fff;
-	font-weight: bold;
-	padding: 10px;
-	outline: none;
 	transition: .5s;
+	outline: none;
 }
 
 button:hover {
+	background: rgba(0, 0, 0, 0.1);
 	cursor: pointer;
-	background: #fff;
-	color: #f00;
-
-}
-p {
-	color: red;
 }
