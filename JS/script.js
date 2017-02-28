@@ -9,3 +9,4 @@ btnAdd.addEventListener('click', function() {
 btnRemove.addEventListener('click', function() {
 	unorderedList.removeChild(items[items.length - 1]);
 });
+
