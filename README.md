@@ -1,1 +1,1 @@
-Small practice with javaScript
+# Small practice with javaScript
